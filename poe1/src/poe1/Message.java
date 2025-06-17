@@ -1,18 +1,10 @@
 
-package poe1;
-
 import javax.swing.JOptionPane;
 import org.json.JSONObject;
 import java.io.FileWriter;
 import java.io.IOException;
 import org.json.JSONException;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
-
-import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -32,7 +24,7 @@ public class Message {
     private static int messageCount = 0;
     private int messageNumber;
     private String recipient;
-    public String messageText;
+    private String messageText;
     private String messageHash;
     private MessageStorage storage;
 
@@ -44,7 +36,7 @@ public class Message {
         this.messageHash = createMessageHash();
         this.storage = new MessageStorage();
     }
-//QuickChatApp quickchatapp = new QuickChatApp();
+QuickChatApp quickchatapp = new QuickChatApp();
     public Message() {
         this("", ""); // Default constructor with empty values
     }
@@ -61,7 +53,7 @@ public class Message {
     public boolean checkRecipientCell() {
         return recipient != null && recipient.matches("\\d{10,13}");
     }
-   // Main main = new Main();
+    Main main = new Main();
 
     public String createMessageHash() {
         if (messageText == null || messageText.trim().isEmpty()) {
@@ -77,7 +69,6 @@ public class Message {
     }
 
     public String sendMessage(String action) {
-        
         
          JOptionPane.showMessageDialog(null, messageId + " hsh" + messageHash + "receip " + recipient + "text" + messageText);
         
@@ -109,46 +100,27 @@ public class Message {
     public String getRecipient() { return recipient; }
     public String getMessageText() { return messageText; }
     public String getMessageHash() { return messageHash; }
-    public static int getMessageCount() { return messageCount; }    
-    
+    public static int getMessageCount() { return messageCount; }
 }
 
-
- class MessageStorage {
-
-    private static final String FILE_PATH = "storedMessages.json";
-
+class MessageStorage {
     public void storeMessageToJson(String messageId, String messageHash, String recipient, String messageText) {
         try {
-            JSONArray messageArray = new JSONArray();
+            JSONObject obj = new JSONObject();
+            obj.put("messageId", messageId);
+            obj.put("messageHash", messageHash);
+            obj.put("recipient", recipient);
+            obj.put("messageText", messageText);
 
-            // Load existing messages
-            if (new File(FILE_PATH).exists()) {
-                String content = new String(Files.readAllBytes(Paths.get(FILE_PATH)));
-                if (!content.isEmpty()) {
-                    messageArray = new JSONArray(content);
-                }
-            }
-
-            // Create new message object
-            JSONObject newMessage = new JSONObject();
-            newMessage.put("messageId", messageId);
-            newMessage.put("messageHash", messageHash);
-            newMessage.put("recipient", recipient);
-            newMessage.put("messageText", messageText);
-
-            // Add and save
-            messageArray.put(newMessage);
-            FileWriter file = new FileWriter(FILE_PATH);
-            file.write(messageArray.toString(4)); // pretty print
+            FileWriter file = new FileWriter("storedMessages.json", true);
+            file.write(obj.toString() + System.lineSeparator());
             file.close();
-
         } catch (IOException e) {
             System.out.println("Error saving message to JSON: " + e.getMessage());
         }
     }
 
     public static int returnTotalMessages() {
-        return Message.getMessageCount();  // Your existing logic
+        return Message.getMessageCount();
     }
 }
