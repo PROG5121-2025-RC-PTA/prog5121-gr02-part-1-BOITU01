@@ -1,0 +1,104 @@
+[
+    {
+        "messageText": "This message better work",
+        "recipient": "0727284963",
+        "messageId": "0211855147",
+        "messageHash": "THISWORK"
+    },
+    {
+        "messageText": "This is the second message in the list ",
+        "recipient": "0606474898",
+        "messageId": "0338492600",
+        "messageHash": "THISLIST"
+    },
+    {
+        "messageText": "This is the third message in the list",
+        "recipient": "0874512635",
+        "messageId": "0827807711",
+        "messageHash": "THISLIST"
+    },
+    {
+        "messageText": "This is the message sent on sunday",
+        "recipient": "0742568945",
+        "messageId": "0378052254",
+        "messageHash": "THISSUNDAY"
+    },
+    {
+        "messageText": "this is the second message",
+        "recipient": "0761452369",
+        "messageId": "0813332405",
+        "messageHash": "THISMESSAGE"
+    },
+    {
+        "messageText": "testing more stuff",
+        "recipient": "06064587456",
+        "messageId": "0832053562",
+        "messageHash": "TESTINGSTUFF"
+    },
+    {
+        "messageText": "Even more stuff",
+        "recipient": "0721645789",
+        "messageId": "0648515498",
+        "messageHash": "EVENSTUFF"
+    },
+    {
+        "messageText": "This better work",
+        "recipient": "0896452123",
+        "messageId": "0437145297",
+        "messageHash": "THISWORK"
+    },
+    {
+        "messageText": "I am entering the message",
+        "recipient": "06064582369",
+        "messageId": "0128825307",
+        "messageHash": "IMESSAGE"
+    },
+    {
+        "messageText": "This is the second message",
+        "recipient": "0874123568",
+        "messageId": "0357627811",
+        "messageHash": "THISMESSAGE"
+    },
+    {
+        "messageText": "hffdsbvjdksvbxdjksbdkjvbsjkbsjkvbdsajkzvbskjbvkjsdxbvdskjsbkbvdkjsbvkjdsbkjbvdskjbvdskjvdbs",
+        "recipient": "0145789632",
+        "messageId": "0114928354",
+        "messageHash": "HFFDSBVJDKSVBXDJKSBDKJVBSJKBSJKVBDSAJKZVBSKJBVKJSDXBVDSKJSBKBVDKJSBVKJDSBKJBVDSKJBVDSKJVDBSHFFDSBVJDKSVBXDJKSBDKJVBSJKBSJKVBDSAJKZVBSKJBVKJSDXBVDSKJSBKBVDKJSBVKJDSBKJBVDSKJBVDSKJVDBS"
+    },
+    {
+        "messageText": "This is the message",
+        "recipient": "0101010101",
+        "messageId": "0237723273",
+        "messageHash": "THISMESSAGE"
+    },
+    {
+        "messageText": "This is the message 2hjsdkjsb",
+        "recipient": "0202020202",
+        "messageId": "0732593033",
+        "messageHash": "THIS2HJSDKJSB"
+    },
+    {
+        "messageText": "This is the first message",
+        "recipient": "0174102365",
+        "messageId": "0685301445",
+        "messageHash": "THISMESSAGE"
+    },
+    {
+        "messageText": "This is the second message",
+        "recipient": "0789654123",
+        "messageId": "0894160716",
+        "messageHash": "THISMESSAGE"
+    },
+    {
+        "messageText": "Thi is the messagejhfdmbfvdkjbvhjbvd",
+        "recipient": "0727419632",
+        "messageId": "0609888334",
+        "messageHash": "THIMESSAGEJHFDMBFVDKJBVHJBVD"
+    },
+    {
+        "messageText": "ghefvddfhgwsjvhjbskdvhfjb after",
+        "recipient": "0606456987",
+        "messageId": "0348878004",
+        "messageHash": "GHEFVDDFHGWSJVHJBSKDVHFJBAFTER"
+    }
+]
